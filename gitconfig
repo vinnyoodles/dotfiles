@@ -5,3 +5,12 @@
   email = vinnyoodles@gmail.com
 [push]
   default = matching
+[core]
+	editor = /usr/bin/vim
+[alias]
+  logp = log --pretty=oneline --abbrev-commit --graph --decorate --color --all
+  cmt = commit -m
+  cmp = "!f() { git commit -m \"$@\" && git push; }; f"
+  chk = checkout
+  d = diff
+  p = push

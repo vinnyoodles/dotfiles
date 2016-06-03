@@ -11,6 +11,14 @@ set ruler
 
 " Height of the command bar
 set cmdheight=1
+set laststatus=2
+set statusline=
+set statusline+=%<\                       " cut at start
+set statusline+=%2*[%n%H%M%R%W]%*\        " flags and buf no
+set statusline+=%-40f\                    " path
+set statusline+=%=%1*%y%*%*\              " file type
+set statusline+=%10((col:%c,\ line:%l)%)\            " line and column
+set statusline+=%P                        " percentage of file
 
 " A buffer becomes hidden when it is abandoned
 set hid
@@ -55,7 +63,7 @@ set tm=500
 syntax enable 
 
 try
-    colorscheme desert
+    colorscheme solarized 
 catch
 endtry
 
@@ -105,4 +113,5 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+
 
