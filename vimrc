@@ -63,7 +63,7 @@ set tm=500
 syntax enable 
 
 try
-    colorscheme solarized 
+    colorscheme desert 
 catch
 endtry
 
