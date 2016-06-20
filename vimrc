@@ -16,6 +16,11 @@ set statusline=
 set statusline+=%<\                       " cut at start
 set statusline+=%2*[%n%H%M%R%W]%*\        " flags and buf no
 set statusline+=%-40f\                    " path
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
 set statusline+=%=%1*%y%*%*\              " file type
 set statusline+=%10((col:%c,\ line:%l)%)\            " line and column
 set statusline+=%P                        " percentage of file
@@ -69,21 +74,6 @@ endtry
 
 set background=dark
 
-" Set extra options when running in GUI mode
-if has("gui_running")
-    set guioptions-=T
-    set guioptions-=e
-    set t_Co=256
-    set guitablabel=%M\ %t
-endif
-
-" Set utf8 as standard encoding and en_US as the standard language
-set encoding=utf8
-
-" Use Unix as the standard file type
-set ffs=unix,dos,mac
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -91,7 +81,6 @@ set ffs=unix,dos,mac
 set nobackup
 set nowb
 set noswapfile
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
@@ -113,5 +102,23 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Pathogen plugins
+"   - Syntastic
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+call plug#begin()
+Plug 'https://github.com/keith/swift.vim.git'
+call plug#end()
+
+execute pathogen#infect()
+
+let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 
