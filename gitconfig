@@ -1,12 +1,18 @@
 [color] 
   ui = true
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
 [user]
   name = Vincent Le
   email = vinnyoodles@gmail.com
 [push]
   default = matching
 [core]
-	editor = /usr/bin/vim
+  editor = /usr/bin/vim
 [alias]
   logp = log --pretty=oneline --abbrev-commit --graph --decorate --color --all
   cmt = commit -m
@@ -15,21 +21,7 @@
   d = diff
   p = push
   pop = reset --soft HEAD^
-[color "branch"]
-  current = yellow bold
-  local = green bold
-  remote = cyan bold
-[color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
-  whitespace = red reverse
-[color "status"]
-  added = green bold
-  changed = yellow bold
-  untracked = red bold
 [diff]
-    tool = vimdiff
+  tool = vimdiff
 [difftool]
-    prompt = false
+  prompt = false
