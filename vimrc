@@ -68,7 +68,7 @@ set tm=500
 syntax enable 
 
 try
-    colorscheme solarized 
+    colorscheme wwdc2016
 catch
 endtry
 

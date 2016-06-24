@@ -2,23 +2,12 @@
 
 ###Installation
 
-Install Pathogen for vim plugins
+[Install Syntastic](https://github.com/scrooloose/syntastic#installpathogen)
 
+Use custom colorscheme
 ```
-$ mkdir -p ~/.vim/autoload ~/.vim/bundle
-$ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-```
-
-Clone syntastic for custom syntax checking 
-
-```
-$ cd ~/.vim/bundle
-$ git clone https://github.com/scrooloose/syntastic.git
-```
-
-Restart vim and install syntastic with the following command in vim
-```
-:Helptags
+$ mkdir ~/.vim/colors # if colors dir doesn't exist
+$ cp themes/wwdc2016.vim ~/.vim/colors/wwdc2016.vim
 ```
 
 Loading vimrc
@@ -52,9 +41,10 @@ switch pane:  Meta + arrow keys
 
 ##zshrc
 
-Rbenv not updating ruby issue
+Use custom 3den zshrc theme 
 ```
-$ export PATH="$HOME/.rbenv/bin:$PATH"
-$ eval "$(rbenv init -)"
+$ cp themes/3den.zsh-theme ~/.oh-my-zsh/themes/3den.zsh-theme
+$ source ~/.zshrc
 ```
+
 
