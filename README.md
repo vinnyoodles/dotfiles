@@ -50,6 +50,11 @@ using Meta (default Meta is `alt`)
 switch pane:  Meta + arrow keys
 ```
 
+##zshrc
 
-
+Rbenv not updating ruby issue
+```
+$ export PATH="$HOME/.rbenv/bin:$PATH"
+$ eval "$(rbenv init -)"
+```
 

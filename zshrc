@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/vincent/.oh-my-zsh
+# export ZSH=/home/vincent/.oh-my-zsh
+export ZSH=/Users/Vincent/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -84,4 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alia sohmyzsh="mate ~/.oh-my-zsh"
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 
