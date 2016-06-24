@@ -6,7 +6,7 @@ export ZSH=/Users/Vincent/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit"
+ZSH_THEME="3den"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -88,4 +88,8 @@ export VISUAL=/usr/bin/vim
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+
+if [ "$TMUX" = "" ]
+  then tmux
+fi
 

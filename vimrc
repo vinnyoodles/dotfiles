@@ -1,12 +1,12 @@
 set history=500
 set number
 
+set term=screen-256color
+
 set autoread
 set so=7
 
-set wildmenu
-
-"Always show current position
+set wildmenu 
 set ruler
 
 " Height of the command bar
@@ -68,7 +68,7 @@ set tm=500
 syntax enable 
 
 try
-    colorscheme desert 
+    colorscheme solarized 
 catch
 endtry
 
@@ -111,6 +111,7 @@ set wrap "Wrap lines
 
 call plug#begin()
 Plug 'https://github.com/keith/swift.vim.git'
+Plug 'https://github.com/flazz/vim-colorschemes'
 call plug#end()
 
 execute pathogen#infect()
