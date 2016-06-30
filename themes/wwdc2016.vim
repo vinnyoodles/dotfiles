@@ -1,4 +1,4 @@
-" 'wwdc16.vim' -- Vim color scheme.
+" 'wwdc2016.vim' -- Vim color scheme.
 " " Maintainer:   Lifepillar
 
 hi clear
@@ -7,7 +7,7 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let colors_name = 'wwdc16'
+let colors_name = 'wwdc2016'
 
 set background=dark
 
@@ -89,7 +89,7 @@ call s:HL("Identifier",   s:bluegreen,   s:none)
 call s:HL("Ignore",       s:fg,          s:bg)
 call s:HL("PreProc",      s:purple,      s:none)
 call s:HL("Special",      s:green,       s:none)
-call s:HL("Statement",    s:fusia,       s:black)
+call s:HL("Statement",    s:orange,       s:black)
 call s:HL("Todo",         s:red,         s:none,   {'cterm': 'bold',      'gui': 'bold'})
 call s:HL("Type",         s:blue,        s:none)
 call s:HL("Underlined",   s:none,        s:none,   {'cterm': 'underline', 'gui': 'underline'})
