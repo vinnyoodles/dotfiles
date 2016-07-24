@@ -21,6 +21,12 @@
   d = diff
   p = push
   pop = reset --soft HEAD^
+  pullup = pull upstream master
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = blue bold
 [diff]
   tool = vimdiff
 [difftool]
