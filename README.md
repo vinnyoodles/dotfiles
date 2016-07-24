@@ -47,4 +47,11 @@ $ cp themes/3den.zsh-theme ~/.oh-my-zsh/themes/3den.zsh-theme
 $ source ~/.zshrc
 ```
 
+##xcode
+
+Updating xcode theme
+```
+$ mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+$ cp themes/WWDC2016.dvtcolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+```
 
