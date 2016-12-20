@@ -87,9 +87,3 @@ export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-
-
-if [ "$TMUX" = "" ]
-  then tmux
-fi
-
