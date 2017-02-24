@@ -109,10 +109,6 @@ set wrap "Wrap lines
 "   - Syntastic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-call plug#begin()
-Plug 'https://github.com/flazz/vim-colorschemes'
-call plug#end()
-
 execute pathogen#infect()
 
 let g:syntastic_always_populate_loc_list = 1
