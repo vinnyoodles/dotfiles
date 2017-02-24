@@ -110,13 +110,11 @@ set wrap "Wrap lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 call plug#begin()
-Plug 'https://github.com/keith/swift.vim.git'
 Plug 'https://github.com/flazz/vim-colorschemes'
 call plug#end()
 
 execute pathogen#infect()
 
-let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
