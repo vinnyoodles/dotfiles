@@ -55,3 +55,6 @@ $ mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 $ cp themes/WWDC2016.dvtcolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 ```
 
+
+##gnome theme
+For the gnome terminal theme, see [this](http://askubuntu.com/questions/668227/load-theme-files-in-gnome-terminal-on-ubuntu-15-04)
