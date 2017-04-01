@@ -58,3 +58,8 @@ $ cp themes/WWDC2016.dvtcolortheme ~/Library/Developer/Xcode/UserData/FontAndCol
 
 ##gnome theme
 For the gnome terminal theme, see [this](http://askubuntu.com/questions/668227/load-theme-files-in-gnome-terminal-on-ubuntu-15-04)
+
+##rofi theme
+```bash
+$ rofi -show run  -fg "#B0E670" -bg "#14161F" -hlfg "#14161F" -hlbg "#B0E670" -bc "#14161F"  -font "MonacoB 12" -padding 10 -separator-style none -opacity 80
+```
