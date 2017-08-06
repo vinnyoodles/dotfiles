@@ -1,6 +1,6 @@
-##vimrc
+## vimrc
 
-###Installation
+### Installation
 
 [Install Syntastic](https://github.com/scrooloose/syntastic#installpathogen)
 
@@ -16,9 +16,9 @@ $ cp vimrc ~/.vimrc
 $ source ~/.vimrc
 ```
 
-##tmux
+## tmux
 
-###tmux cheatsheet
+### tmux cheatsheet
 
 starts tmux
 
@@ -39,7 +39,7 @@ using Meta (default Meta is `alt`)
 switch pane:  Meta + arrow keys
 ```
 
-##zshrc
+## zshrc
 
 Use custom 3den zshrc theme 
 ```
@@ -47,7 +47,7 @@ $ cp themes/3den.zsh-theme ~/.oh-my-zsh/themes/3den.zsh-theme
 $ source ~/.zshrc
 ```
 
-##xcode
+## xcode
 
 Updating xcode theme
 ```
@@ -56,10 +56,10 @@ $ cp themes/WWDC2016.dvtcolortheme ~/Library/Developer/Xcode/UserData/FontAndCol
 ```
 
 
-##gnome theme
+## gnome theme
 For the gnome terminal theme, see [this](http://askubuntu.com/questions/668227/load-theme-files-in-gnome-terminal-on-ubuntu-15-04)
 
-##rofi theme
+## rofi theme
 ```bash
 $ rofi -show run  -fg "#B0E670" -bg "#14161F" -hlfg "#14161F" -hlbg "#B0E670" -bc "#14161F"  -font "MonacoB 12" -padding 10 -separator-style none -opacity 80
 ```
