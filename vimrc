@@ -1,41 +1,11 @@
-set history=500
-set number
-set term=screen-256color
-set autoread
-set so=7
-set wildmenu 
-set ruler
-set cmdheight=1
-set laststatus=2
-set hid
-set backspace=eol,start,indent
-set ignorecase
-set smartcase
-set hlsearch
-set incsearch 
-set lazyredraw 
-set magic
-set showmatch 
-set mat=2
-set noerrorbells
-set novisualbell
-set tm=500
-syntax enable 
+set runtimepath+=~/.vim_runtime
+
+source ~/.vim_runtime/vimrcs/basic.vim
+source ~/.vim_runtime/vimrcs/filetypes.vim
+source ~/.vim_runtime/vimrcs/plugins_config.vim
+source ~/.vim_runtime/vimrcs/extended.vim
+
 try
-colorscheme wwdc2016
+source ~/.vim_runtime/my_configs.vim
 catch
 endtry
-
-set background=dark
-set nobackup
-set nowb
-set noswapfile
-set expandtab
-set smarttab
-set shiftwidth=2
-set tabstop=2
-set lbr
-set tw=500
-set ai 
-set si 
-set wrap 
